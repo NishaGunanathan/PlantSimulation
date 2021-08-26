@@ -1,0 +1,29 @@
+InternalClassType: Frame
+Coordinate3D: [20.05,-13.850000000000001,0]
+Name: DistributedSimulation
+Origin: 420d594b-a4cc-4ff1-a5d1-f270b0a9362b
+ShowDisplayPanels: true
+ShowObjectLabels: false
+ShowObjectNames: true
+UUID: 95e418fb-a3a5-4c36-b401-15b294648c1f
+ZoomFactor: 1
+$CustomAttributes:
+-
+ Name: mainDialog
+ $DataType: object
+ Value: "~.Dialog.Dialog"
+$ShowConnections: true
+$ShowComment: true
+$ShowGrid: true
+$Nodes:
+- 4f7e1a66-55e1-41cb-b01c-8e28f6469871
+- 557228ca-314c-4aae-ab12-e932a1a18c6c
+- af4d5e70-3564-43c8-a83d-72a580b7d61f
+- 50cb92fd-c484-4de1-a666-bc095623470c
+- 246843cf-0d7c-4639-a09a-f5d78ab0cad5
+- b5ad0b86-b5d0-4dec-a043-ac55820453d7
+- 4f3a342c-02c8-4bd9-bd4b-c185f9dcca00
+- 7935cc49-2072-4c26-ba59-d358414faed8
+- 18f018b1-874f-45d7-8735-bcbca7cb289d
+- 78fee27c-9168-48b9-bddd-b2fcfba45d93
+- 9318f8e3-5d4e-401b-a15b-1fd7be42ddb9

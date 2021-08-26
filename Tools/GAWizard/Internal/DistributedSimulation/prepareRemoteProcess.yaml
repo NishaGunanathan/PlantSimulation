@@ -1,0 +1,44 @@
+InternalClassType: Method
+Coordinate3D: [9.1,-1.85,0]
+Name: prepareRemoteProcess
+Origin: 4b7729ed-210d-41df-8305-461d6d5762b7
+Program: |+1
+ -- called by M_createRemoteProcess_ on the remote process
+ var WizObj:object := ~
+ closeAllWindows
+ 
+ if WizObj.RemoteLowerPrio 
+ 	SetProcessPriorityToBelowNormal(true)
+ end
+ 
+ resetInitBox(false)
+ if NOT ~.simulateWithAnimation	
+ 	animation(false)
+ end
+ closeConsole(true)
+ 
+ var pathStr:string := to_str(WizObj,".state")
+ if existsObject(pathStr) 
+ 	str_to_obj(pathStr).value := "ready"
+ end
+ 
+ if eventController /= void 
+ 	eventController.SummaryReport := false
+ 	eventController.RealTime := false
+ end;
+ 
+ var stopOnErrors, stopOnFormularErrors: boolean;
+ holeAnhaltenBeiFehlern(stopOnErrors, stopOnFormularErrors)
+ if stopOnErrors 
+ 	ModelErrorHandling := setErrorHandler(&ErrorHandling)
+ 	-- The function setErrorHandler returns the last registered error handling method.
+ 	-- treatment of errors in SimTalk by the global error handling of the remote process.
+ end
+ --fireSimTalkMessage("Remote process was prepared");
+RandomSeed: 466
+UUID: 43404f5d-de13-46a2-8623-b5739cf2f470
+$IconAttributes:
+ CurrIconNo: 0
+ Matrix: [1,0,0,1]
+ ChangedRotation: true
+ ChangedScaling: true

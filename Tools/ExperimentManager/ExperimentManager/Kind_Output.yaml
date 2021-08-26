@@ -1,0 +1,39 @@
+InternalClassType: DataTable
+Coordinate3D: [21.45,-6.0499999999999989,0]
+Name: Kind_Output
+Origin: d6182412-ec21-4632-8495-4f754642cb1e
+UUID: 11c3c5d7-b991-45dc-8995-fb9ff58e9239
+$CustomAttributes:
+-
+ Name: numberOfOutputValues
+ DataType: integer
+ Value: 0
+$Data:
+ Comment: ~
+ ListFormat:
+  ColumnIndex: true
+  ColumnWidth: 20
+  DataType: string
+  MaxXDim: 2
+  RowIndex: true
+  ShowDataType: true
+  ColumnFormat:
+  -
+   Index: 0
+   Hidden: false
+   Width: 28
+  -
+   Index: 1
+   Alignment: "Right"
+   Width: 10
+  -
+   Index: 2
+   Alignment: "Center"
+   DataType: boolean
+  RowFormat:
+  -
+   Index: 0
+   Alignment: "Center"
+   Hidden: false
+ ColumnIndex: [string,3,"Target value","evaluated by","High Values are Better"]
+ Columns:

@@ -1,0 +1,83 @@
+InternalClassType: Frame
+BackgroundColor: 16777215
+Coordinate3D: [0.5,0,0]
+CreateIn3D: false
+Name: Dialog
+Origin: c54073d4-ff97-4124-9cb7-35f2531fbed2
+ReplacementMode: "exchange"
+ShowDisplayPanels: true
+ShowObjectLabels: false
+ShowObjectNames: true
+UUID: b666af76-86c4-4a6e-86df-9bc7f3b6595b
+ZoomFactor: 1
+$IconAttributes:
+ CurrIconNo: 1
+$CustomAttributes:
+-
+ Name: startDateExpRun
+ DataType: datetime
+ Value: 1970-1-1
+-
+ Name: showProgressByIcon
+ DataType: method
+ RandomSeed: 306
+ Value: |+1
+  -- show the progress by the icons "Icon0",...,"Icon8"
+  param ExpNo,RunNo:integer
+  
+  var totalNum:integer
+  var ApplObj:object := ~
+  
+  if ApplObj.usingRules 
+  	totalNum := max(1, ApplObj.NumRulesExp)
+  elseif ~.usingTables 
+  	totalNum := max(1, ApplObj.ExpTable.yDim)
+  else
+  	totalNum := 1
+  end
+  
+  var j:integer := max(1, ApplObj.numRuns) -- number of observations
+  totalNum := totalNum * j
+  var n:integer := (ExpNo - 1) * j + RunNo
+  
+  var iconNo:integer := floor(8 * n/totalNum) -- round down of a number in [0,8)
+  -- iconNo = 0,...,7
+  -- 8 is shown ones after the last run
+  if -1 < iconNo AND iconNo < 9 
+  	ApplObj.selected := false
+  	var iconStr:string := to_str("icon",iconNo)
+  	ApplObj.CurrIcon := iconStr
+  	if ~._3D.exists
+  		~._3D.VisibleGraphicGroups := makeArray(iconStr)
+  	end
+  end
+-
+ Name: restoring
+ DataType: boolean
+ Value: false
+-
+ Name: StudyExecuted
+ DataType: boolean
+ Value: false
+$ShowConnections: true
+$ShowComment: true
+$ShowGrid: true
+$Nodes:
+- c95c28f7-cf89-4a6b-b7b9-3f3a79ba4df2
+- d17dc10a-5e74-45bb-a835-5a71d903903f
+- 3959b14f-8044-403a-88ae-9987958c1f59
+- 242f68b3-bd48-4bf9-9652-fc035c12a58b
+- 54fea23b-aaa8-431f-a0dd-ba67b567bb24
+- 05825c9a-771b-4126-bea3-f39fcc76089b
+- 4a9a012a-98b1-4239-9c9d-35158e6253b8
+- 13bdb052-9edf-422e-b956-8c46a7b574e9
+- c9c90829-a249-46f7-b734-98653c7eeed1
+- d9897cfd-d935-462b-a7b4-397f93449868
+- e955e93e-5226-4314-80ab-8523a1e75560
+- 7c0b7bcd-80c0-407e-88aa-5cd7bf6a37fc
+- e5df1b32-5fd0-4b1d-9430-0fb42fb5f96e
+- c47bba75-e5f2-44cb-8520-90914c6e2975
+- 63697865-c618-4a7d-8d23-7268f0de8e09
+- 00dc25e6-a1dd-432e-9e6b-48f1b9457224
+- 5002f195-0f80-4f1e-9457-daa0c60ca8d4
+- a5ba28c5-79fd-4ac6-82e2-8d878514b9ab

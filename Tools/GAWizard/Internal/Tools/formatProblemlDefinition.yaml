@@ -1,0 +1,43 @@
+InternalClassType: Method
+Coordinate3D: [2,-10,0]
+Name: formatProblemlDefinition
+Origin: 4b7729ed-210d-41df-8305-461d6d5762b7
+Program: |+1
+ -- set explanation in current language
+ param obj:object -- ProblemDefinition
+ 
+ var k,a,b,j:integer;var sc:real;var str:string
+ 
+ k := 0; sc := 0.8
+ repeat
+ 	k := k + 2
+ until obj[k,0] = void
+ 
+ for j := 1 to 5 
+ 	a := k + 2*j-3
+ 	obj.setEditorRightsColumn(a,true)
+ 	obj.setEditorRightsColumn(a+1,false)
+ 	obj[a,0] := "Parameter:"
+ 	obj.setColumnWidth(a, 14)
+ 	obj[a,1] := rootfolder.Localization.getText(62) -- "Lower bound"
+ 	obj[a,2] := rootfolder.Localization.getText(63) -- "Upper bound"
+ 	obj[a,3] := rootfolder.Localization.getText(64) -- "Increment"
+ 		
+ next
+ a := 2
+ while obj[a,0]/=void 
+ 	str := obj[a,0]
+ 	b := min(80,ceil(sc*strLen(str))+1)
+ 	obj.setColumnWidth(a,b)
+ 	a := a+2
+ end
+ 
+
+RandomSeed: 492
+SelectCtrl:
+UUID: a94d91d7-e2d0-4b70-8514-6630eada87c7
+$IconAttributes:
+ CurrIconNo: 10
+ Matrix: [1,0,0,1]
+ ChangedRotation: true
+ ChangedScaling: true

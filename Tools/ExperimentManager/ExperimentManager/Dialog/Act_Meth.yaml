@@ -1,0 +1,20 @@
+InternalClassType: Method
+Coordinate3D: [-3,4,0]
+Name: Act_Meth
+Origin: 274ecbb4-64f0-44d2-b3a0-dffede33455d
+Program: |+1
+ var rName:string := @.activeRuleName
+ var rTab:object := ~.Rules.Rules
+ rTab.setCursor(2,1)
+ rTab.find({2,1}..{2,*},rName)
+ var row:integer := rTab.cursorY
+ if rTab[6,row] /= void 
+ 	rTab[6,row].openDialog
+ end
+
+RandomSeed: 323
+UUID: 05825c9a-771b-4126-bea3-f39fcc76089b
+$IconAttributes:
+ Matrix: [1,0,0,1]
+ ChangedRotation: true
+ ChangedScaling: true

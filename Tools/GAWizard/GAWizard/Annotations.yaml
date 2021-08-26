@@ -1,0 +1,40 @@
+InternalClassType: DataTable
+Coordinate3D: [37.3,-17.35,0]
+Name: Annotations
+Origin: 7ae89049-c04e-4ec8-bfe7-e0830b939500
+UUID: d3dbda03-89a8-4fc0-9ce9-2a825677bae2
+$IconAttributes:
+ Matrix: [1,0,0,1]
+ ChangedRotation: true
+ ChangedScaling: true
+$Data:
+ Comment: "examples for the column index: SingleProc12.proctime, mytab[2,3]"
+ ListFormat:
+  ColumnIndex: true
+  ColumnWidth: 10
+  DataType: real
+  FormatString: "-15.2"
+  MaxXDim: 7
+  ShowDataType: true
+  ColumnFormat:
+  -
+   Index: 0
+   Hidden: false
+   Width: 29
+  -
+   Index: 1
+   DataType: integer
+   FormatString: "-9"
+  -
+   Index: 5
+   DataType: integer
+   FormatString: "-9"
+  -
+   Index: 6
+   DataType: integer
+   FormatString: "-9"
+  -
+   Index: 7
+   DataType: string
+ ColumnIndex: [string,8,~,"0=Vertical","Value","From","To","Color","Style","Text"]
+ Columns:

@@ -1,0 +1,19 @@
+InternalClassType: Method
+Coordinate3D: [4,-16.8,0]
+Name: EndSim
+Origin: 274ecbb4-64f0-44d2-b3a0-dffede33455d
+Program: |+1
+ -- for a non-distributed simulation make the evaluations of the run
+ -- distributed simulation the remote process has State = "ready", that is, it is not called
+ 
+ if (NOT usingRemote) AND (state ="running" OR state ="wait4stop")  
+ 	&endOfSim.executeNewCallChain(false) -- not stopped experiment
+ end
+ 
+ if RescaleActive 
+ 	&RescaleObservation.executeNewCallChain
+ end
+RandomSeed: 188
+UUID: d86b8c55-422b-41cb-b9db-ec58a378b404
+$IconAttributes:
+ CurrIconNo: 8

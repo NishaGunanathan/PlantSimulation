@@ -1,0 +1,32 @@
+InternalClassType: HtmlReport
+Content: ""
+Coordinate3D: [6.25,-35.900000000000006,0]
+Name: UserReport
+Origin: 424fd1ed-9183-4c8d-afb7-d1affadb9f0e
+UUID: 217a7d8d-ee49-4d80-988f-b9e97421c50b
+$CustomAttributes:
+-
+ Name: DrainStatistics
+ $DataType: method
+ RandomSeed: 201
+-
+ Name: zDrainStatistics
+ $DataType: method
+ RandomSeed: 200
+-
+ Name: Informations
+ DataType: table
+ Value:
+  Comment: ~
+  CommonFormat: false
+  ListFormat:
+   ColumnWidth: 20
+   DataType: string
+   RowIndex: true
+   ShowDataType: true
+   ColumnFormat:
+   -
+    Index: 0
+    Hidden: false
+  Columns:
+  - [0,string,3,"Name of the project:","Version of the project:","Person in charge:"]

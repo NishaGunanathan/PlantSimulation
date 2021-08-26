@@ -1,0 +1,21 @@
+InternalClassType: DataTable
+Coordinate3D: [13,-3.25,0]
+Name: InputValues
+Origin: d6182412-ec21-4632-8495-4f754642cb1e
+UUID: 666f1256-5621-4037-ab10-2fb059a36ae9
+$Data:
+ Comment: ~
+ ListFormat:
+  ColumnIndex: true
+  ColumnWidth: 10
+  DataType: real
+  FormatString: "-15.2"
+  RowIndex: true
+  ShowDataType: true
+  ColumnFormat:
+  -
+   Index: 0
+   Hidden: false
+   Width: 10
+ ColumnIndex: [string,1,"Control value"]
+ Columns:

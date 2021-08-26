@@ -1,0 +1,15 @@
+InternalClassType: Folder
+ChangePathCtrl:
+Coordinate3D: [2,-3,0]
+DestructorCtrl:
+MoveToFolderCtrl:
+Name: Tools
+PermitDeleteCtrl:
+RenameCtrl:
+UUID: e039aa7d-17ec-454f-87ea-c32c16c629de
+$Nodes:
+- 7e5e8a77-5384-4683-9901-9f088a0a1e96
+- cdec04e2-88c5-41bd-926c-052693166aae
+- 8967c55b-2208-43ea-a7af-e41377490891
+- 94effcf5-202c-4af6-818a-2e597a0938bf
+- d93fe22e-fc7e-4737-83c7-b5ac0018d6a0

@@ -1,0 +1,60 @@
+InternalClassType: DataTable
+ChangePathCtrl:
+ConstructorCtrl:
+Coordinate3D: [-3,14,0]
+DestructorCtrl:
+DragDropCtrl:
+MoveInFrameCtrl:
+MoveToFolderCtrl:
+Name: RemoteMachines
+OpenCtrl:
+Origin: d6182412-ec21-4632-8495-4f754642cb1e
+PlausibilityCtrl:
+RelabelCtrl:
+RenameCtrl:
+SelectCtrl:
+UUID: e5df1b32-5fd0-4b1d-9430-0fb42fb5f96e
+$IconAttributes:
+ Matrix: [1,0,0,1]
+ ChangedRotation: true
+ ChangedScaling: true
+$Data:
+ Comment: ~
+ ListFormat:
+  ColumnIndex: true
+  ColumnWidth: 20
+  DataType: string
+  MaxXDim: 4
+  RowIndex: true
+  ShowDataType: true
+  ColumnFormat:
+  -
+   Index: 0
+   Hidden: false
+   Width: 15
+  -
+   Index: 1
+   Alignment: "Right"
+   DataType: integer
+   Width: 20
+  -
+   Index: 2
+   Alignment: "Right"
+   DataType: integer
+   Width: 17
+  -
+   Index: 3
+   Alignment: "Right"
+   DataType: time
+   Width: 23
+  -
+   Index: 4
+   Alignment: "Right"
+   DataType: time
+   Width: 22
+  RowFormat:
+  -
+   Index: 0
+   Hidden: false
+ ColumnIndex: [string,5,"Computer","Number of parallel processes","Number of runs","Total simulation time","Mean running time of a simulation"]
+ Columns:

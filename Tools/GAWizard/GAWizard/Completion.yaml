@@ -1,0 +1,21 @@
+InternalClassType: Method
+Coordinate3D: [11.55,-22.35,0]
+Name: Completion
+Origin: 4b7729ed-210d-41df-8305-461d6d5762b7
+Program: |+1
+ -- Prepare user defined statistics after the optimization
+ param tab:table
+ 
+ if TypeOfFitness ~= "time" 
+ 	var t:time := tab[5,1][2,1]
+ 	print "Best fitness: ",t
+ else
+ 	print "Best fitness: ",tab[5,1][2,1]
+ end
+RandomSeed: 405
+UUID: 6e3b2a84-3a45-48c7-a270-082a6202aad1
+$IconAttributes:
+ CurrIconNo: 3
+ Matrix: [1,0,0,1]
+ ChangedRotation: true
+ ChangedScaling: true

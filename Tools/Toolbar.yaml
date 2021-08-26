@@ -1,0 +1,14 @@
+InternalClassType: Toolbar
+ChangePathCtrl:
+ConstructorCtrl:
+DestructorCtrl:
+Label: "Tools"
+MoveToFolderCtrl:
+Name: Toolbar
+UUID: d93fe22e-fc7e-4737-83c7-b5ac0018d6a0
+Visible: true
+$Objects:
+- c5101fe1-5519-4f6e-92e4-5d4fe97b9aa1
+- b08342fd-b1ce-4fd8-9fea-8f3559b14015
+- 4489c940-5fe5-4363-822e-5a279dc4f640
+- 41802cd7-b4c0-4434-9f55-522568b7b123

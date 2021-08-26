@@ -1,0 +1,50 @@
+InternalClassType: DataTable
+ChangePathCtrl:
+CloseCtrl:
+ConstructorCtrl:
+Coordinate3D: [38.1,-39.55,0]
+DestructorCtrl:
+DragDropCtrl:
+MoveInFrameCtrl:
+MoveToFolderCtrl:
+Name: Results4Rules
+OpenCtrl:
+Origin: d6182412-ec21-4632-8495-4f754642cb1e
+PlausibilityCtrl:
+RelabelCtrl:
+RenameCtrl:
+SelectCtrl:
+UUID: 788606a0-36db-479c-b502-84ea568d8b12
+$IconAttributes:
+ Matrix: [1,0,0,1]
+ ChangedRotation: true
+ ChangedScaling: true
+$Data:
+ Comment: "This table is needed for the determination of the mean values of output values, which are used in conditions of rules."
+ ShowComment: true
+ ListFormat:
+  ColumnIndex: true
+  ColumnWidth: 10
+  DataType: real
+  ShowDataType: true
+  ColumnFormat:
+  -
+   Index: 0
+   Hidden: false
+   Width: 39
+  -
+   Index: 1
+   Width: 10
+  -
+   Index: 2
+   Width: 10
+  -
+   Index: 3
+   Width: 10
+  -
+   Index: 4
+   Width: 10
+  -
+   Index: 5
+   Width: 10
+ Columns:

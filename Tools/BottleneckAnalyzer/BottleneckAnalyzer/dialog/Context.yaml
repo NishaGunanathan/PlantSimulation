@@ -1,0 +1,18 @@
+InternalClassType: DataTable
+Coordinate3D: [-9.65,11,0]
+Name: Context
+Origin: 1c4a6906-8a4d-4b7d-a175-5c3237823de7
+UUID: 8f0f84cd-0e23-43f2-944c-ac3f06609a77
+$IconAttributes:
+ Matrix: [1,0,0,1]
+ ChangedRotation: true
+ ChangedScaling: true
+$Data:
+ ListFormat:
+  ColumnWidth: 20
+  DataType: string
+  MaxXDim: 2
+  ShowDataType: true
+ Columns:
+ - [1,string,5,"Analyze","Remove","Ranking","Configure","Help"]
+ - [2,string,5,"dialog.analyzeModel","dialog.removeStats","dialog.showStats","dialog.openConfig","dialog.openHelp"]

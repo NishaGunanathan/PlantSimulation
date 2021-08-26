@@ -1,0 +1,18 @@
+InternalClassType: Method
+Coordinate3D: [19,-7,0]
+Name: openBB
+Origin: 4b7729ed-210d-41df-8305-461d6d5762b7
+Program: |+1
+ /*
+ called by: context menu 'Open'
+ */
+ ?.openDialog
+
+RandomSeed: 495
+SelectCtrl:
+UUID: 601ee8fc-04c0-4457-ab32-8ed2937bacf1
+$IconAttributes:
+ CurrIconNo: 10
+ Matrix: [1,0,0,1]
+ ChangedRotation: true
+ ChangedScaling: true

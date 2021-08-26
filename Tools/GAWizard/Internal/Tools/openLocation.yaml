@@ -1,0 +1,16 @@
+InternalClassType: Method
+Coordinate3D: [9,-7,0]
+Name: openLocation
+Origin: 4b7729ed-210d-41df-8305-461d6d5762b7
+Program: |+1
+ -- menu '?'
+ ?.~.openDialog
+
+RandomSeed: 496
+SelectCtrl:
+UUID: 779f5d5f-9cb1-4965-a9b3-a5bf9df8af94
+$IconAttributes:
+ CurrIconNo: 10
+ Matrix: [1,0,0,1]
+ ChangedRotation: true
+ ChangedScaling: true

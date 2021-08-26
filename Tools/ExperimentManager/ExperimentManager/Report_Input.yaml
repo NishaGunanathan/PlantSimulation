@@ -1,0 +1,38 @@
+InternalClassType: DataTable
+Coordinate3D: [25.5,-3.25,0]
+Name: Report_Input
+Origin: d6182412-ec21-4632-8495-4f754642cb1e
+UUID: 1813c35a-6b94-4e70-b593-44b8172ced47
+$Data:
+ ListFormat:
+  ColumnIndex: true
+  ColumnWidth: 20
+  DataType: string
+  RowIndex: true
+  ShowDataType: true
+  ColumnFormat:
+  -
+   Index: 1
+   Alignment: "Center"
+   DataType: string
+   Width: 7
+  -
+   Index: 2
+   Alignment: "Right"
+   DataType: string
+  -
+   Index: 3
+   Alignment: "Center"
+   DataType: string
+  RowFormat:
+  -
+   Index: 0
+   Hidden: false
+  CellFormat:
+  -
+   Index: 1
+   Rows:
+   -
+    Index: 3
+    FontColor: 0x0
+ Columns:

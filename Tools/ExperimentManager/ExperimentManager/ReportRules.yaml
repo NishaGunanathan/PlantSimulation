@@ -1,0 +1,47 @@
+InternalClassType: DataTable
+Coordinate3D: [42.150000000000006,-39.55,0]
+Name: ReportRules
+Origin: d6182412-ec21-4632-8495-4f754642cb1e
+UUID: 82dc18d1-ac9c-4715-a697-d79ebce2e1fb
+$IconAttributes:
+ Matrix: [1,0,0,1]
+ ChangedRotation: true
+ ChangedScaling: true
+$CustomAttributes:
+-
+ Name: isOpen
+ DataType: boolean
+ Value: false
+$Data:
+ ListFormat:
+  ColumnIndex: true
+  ColumnWidth: 20
+  DataType: string
+  RowIndex: true
+  ShowDataType: true
+  ColumnFormat:
+  -
+   Index: 0
+   Width: 11
+  -
+   Index: 1
+   Width: 24
+  -
+   Index: 2
+   Width: 30
+  -
+   Index: 3
+   Width: 35
+  RowFormat:
+  -
+   Index: 0
+   Hidden: false
+  CellFormat:
+  -
+   Index: 1
+   Rows:
+   -
+    Index: 3
+    FontColor: 0x0
+ ColumnIndex: [string,1,"Experiment"]
+ Columns:

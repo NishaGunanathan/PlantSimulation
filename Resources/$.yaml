@@ -1,0 +1,21 @@
+InternalClassType: Folder
+ChangePathCtrl:
+Coordinate3D: [2,-3,0.05]
+DestructorCtrl:
+MoveToFolderCtrl:
+Name: Resources
+PermitDeleteCtrl:
+RenameCtrl:
+UUID: 0dcdbf3f-74d6-4a36-b47f-fd0c452043f3
+$Nodes:
+- acb0e051-f745-4fc5-b7a6-dcb0be63e1fe
+- ec068b26-644d-424d-8c8e-99b389335429
+- 371d94cd-dadf-4380-b13e-1ddba9204d9a
+- 3181e2e1-d39e-4e27-b065-0834181eee44
+- 78dc8f73-f8bd-4489-a9bb-29392202a298
+- 0092328d-fa1a-4dea-a025-da58a81b9bcb
+- 99dd448e-b336-4c51-a719-8f7093b792be
+- 4f543d75-9b9d-46d4-8a2d-97b08b0a10d5
+- bbad8caa-1c7b-40b6-8faf-1e20896bec7d
+- 2012423e-77ff-41c0-b088-3e7944332ab2
+- c6adc64b-ff66-48ab-b116-aa5106bf2bef

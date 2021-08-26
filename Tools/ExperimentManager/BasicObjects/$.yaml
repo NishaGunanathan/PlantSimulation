@@ -1,0 +1,15 @@
+InternalClassType: Folder
+ChangePathCtrl:
+Coordinate3D: [0,0,0]
+DestructorCtrl:
+HiddenWhenInLockedFolder: true
+MoveToFolderCtrl:
+Name: BasicObjects
+PermitDeleteCtrl:
+RenameCtrl:
+UUID: d29af513-30ff-4ce5-a5e5-37a427a03822
+Password: #
+$Nodes:
+- 3869adc5-b1b1-4dd2-9534-37d49dff07eb
+- 7542db85-2243-493d-ad7f-0cef133549b5
+- 639bc78c-7355-4c08-9c34-f3b93d7f90a4

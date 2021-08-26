@@ -1,0 +1,10 @@
+InternalClassType: Variable
+Coordinate3D: [39.45,-30.85,0]
+DataType: boolean
+Font: 2
+HasInitValue: false
+Name: ExpRunFromRandomDesign
+Origin: d65d096e-2269-431b-94c1-519074cb72f0
+ShowDataType: false
+UUID: b5932cc0-b76f-430d-8390-5866d824cc3a
+Value: false

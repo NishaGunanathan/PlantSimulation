@@ -1,0 +1,16 @@
+InternalClassType: Folder
+ChangePathCtrl:
+Coordinate3D: [0,0,0]
+DestructorCtrl:
+HiddenWhenInLockedFolder: true
+MoveToFolderCtrl:
+Name: Localization
+PermitDeleteCtrl:
+RenameCtrl:
+UUID: 15a02c7a-0baf-429a-b7f9-aa564d677d1f
+$Nodes:
+- caa93a9d-a6e9-47b9-b9a8-ca209e1ff224
+- 6d8137e1-5ea1-4e37-8203-b582e218773c
+- fe1aa7f0-4a0c-44cf-b669-e4114a93f9bb
+- 563ebb96-bc97-4cbd-b40a-1dae689b5a01
+- e874083b-3476-4dc7-a276-0fb90ceb08de

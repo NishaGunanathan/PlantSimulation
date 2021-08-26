@@ -1,0 +1,12 @@
+InternalClassType: DataTable
+Coordinate3D: [44.300000000000004,-12,0]
+Label: ""
+Name: FitnessObservation
+Origin: 7ae89049-c04e-4ec8-bfe7-e0830b939500
+UUID: 1dedfd05-b702-406a-bfca-d2917819a825
+$IconAttributes:
+ Matrix: [1,0,0,1]
+ ChangedRotation: true
+ ChangedScaling: true
+$Data:
+ Comment: ~

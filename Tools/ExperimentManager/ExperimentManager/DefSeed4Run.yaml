@@ -1,0 +1,26 @@
+InternalClassType: Method
+Coordinate3D: [9.8,-16.8,0]
+Name: DefSeed4Run
+Origin: 274ecbb4-64f0-44d2-b3a0-dffede33455d
+Program: |+1
+ param ExpNo,ObservNo:integer -> string -- explanation
+ 
+ if strLen(UserSeedValueMethod) > 0 
+ 	if strLpos(".",UserSeedValueMethod) = 1
+ 		str_to_method(UserSeedValueMethod).execute(ExpNo,ObservNo)
+ 	else
+ 		str_to_method(to_str(~,".",UserSeedValueMethod)).execute(ExpNo,ObservNo)
+ 	end
+ 	
+ else
+ 	if eventController /= void 
+ 		eventController.RandomNumbersVariant := ObservNo
+ 	end
+ end
+RandomSeed: 252
+UUID: 96a38857-3068-419e-8a74-46dabd8d053d
+$IconAttributes:
+ CurrIconNo: 0
+ Matrix: [1,0,0,1]
+ ChangedRotation: true
+ ChangedScaling: true

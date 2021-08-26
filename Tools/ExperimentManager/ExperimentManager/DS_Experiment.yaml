@@ -1,0 +1,12 @@
+InternalClassType: Variable
+Color: 16711680
+Comment: "set by: DefExperiments, DS_Initialize"
+Coordinate3D: [43.45,-12.55,0]
+DataType: integer
+Font: 2
+HasInitValue: false
+Name: DS_Experiment
+Origin: d65d096e-2269-431b-94c1-519074cb72f0
+ShowDataType: false
+UUID: 203e67cc-27b1-4e06-b82a-1144018063ba
+Value: 0

@@ -1,0 +1,26 @@
+InternalClassType: DataList
+Coordinate3D: [29.9,-24.1,0]
+Name: Recording
+Origin: 1bc88631-f23d-45a8-8cfb-c4a19dbf8761
+UUID: 5f45340a-c18d-4899-ab28-29c2af23f987
+$CustomAttributes:
+-
+ Name: isOpen
+ DataType: boolean
+ Value: false
+-
+ Name: remoteErrors
+ DataType: boolean
+ Value: false
+-
+ Name: localErrors
+ DataType: integer
+ Value: 0
+ StatisticsActive: true
+$Data:
+ ListFormat:
+  ColumnWidth: 62
+  DataType: string
+  MaxXDim: 1
+  ShowDataType: true
+ Column:

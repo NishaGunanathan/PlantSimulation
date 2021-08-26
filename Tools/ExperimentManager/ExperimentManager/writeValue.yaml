@@ -1,0 +1,17 @@
+InternalClassType: Method
+Coordinate3D: [3.3999999999999986,-27.5,0]
+Name: writeValue
+Origin: 274ecbb4-64f0-44d2-b3a0-dffede33455d
+Program: |+1
+ -- set AttrStr := Values
+ -- called by:_evalExpTable
+ param AttrStr:string, newVal:any -> boolean
+ 
+ return executeSilent(to_str("param a:any -> boolean ",AttrStr,":= a; return true"), newVal)
+RandomSeed: 250
+UUID: 8ba41d0a-3d8b-4b27-9061-5a186e86e727
+$IconAttributes:
+ CurrIconNo: 0
+ Matrix: [1,0,0,1]
+ ChangedRotation: true
+ ChangedScaling: true

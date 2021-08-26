@@ -1,0 +1,18 @@
+InternalClassType: Method
+Coordinate3D: [14,-10,0]
+Name: exePreparation
+Origin: 4b7729ed-210d-41df-8305-461d6d5762b7
+Program: |+1
+ -- called by: context menu 'Preparation'
+ var obj:object := ?.&Preparation
+ obj.execute
+ -- The user defined preparation method was executed.
+ messageBox(rootfolder.localization.getText(173),1,4) -- info
+RandomSeed: 484
+SelectCtrl:
+UUID: a30023b3-3c5a-4e51-9faa-abe183c3e78e
+$IconAttributes:
+ CurrIconNo: 10
+ Matrix: [1,0,0,1]
+ ChangedRotation: true
+ ChangedScaling: true

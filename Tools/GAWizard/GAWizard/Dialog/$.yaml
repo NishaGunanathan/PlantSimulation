@@ -1,0 +1,117 @@
+InternalClassType: Frame
+AxesOrigin: [0,0]
+BackgroundColor: 16777215
+Coordinate3D: [1.3499999999999996,0,0]
+CreateIn3D: false
+Name: Dialog
+Origin: d8e75832-9683-4083-9837-a9471a732d3f
+ShowDisplayPanels: true
+ShowObjectLabels: true
+ShowObjectNames: true
+UUID: bd62e41f-03e7-4496-80dc-091d697ed279
+ZoomFactor: 1
+$IconAttributes:
+ CurrIconNo: 1
+ Matrix: [1,0,0,1]
+ ChangedRotation: true
+ ChangedScaling: true
+$CustomAttributes:
+-
+ Name: openBB
+ DataType: method
+ RandomSeed: 437
+ Value: |+1
+  /*
+   called by the context menu
+  */
+  ~.openDialog
+
+-
+ Name: sayNoResults
+ DataType: method
+ RandomSeed: 436
+ Value: |+1
+  -- called by: 3 buttons
+  -- messageBox: No Optimization results available.
+   --"No Optimization results available."
+  messageBox(rootfolder.Localization.getText(41),1,4) -- info
+-
+ Name: startDatatime
+ DataType: datetime
+ Value: 2003-10-17 11:30:26.63100004
+-
+ Name: readyIndividuals
+ DataType: integer
+ Value: 0
+-
+ Name: readyObservations
+ DataType: integer
+ Value: 0
+-
+ Name: numPenalty
+ DataType: integer
+ Value: 0
+-
+ Name: numAlready
+ DataType: integer
+ Value: 0
+-
+ Name: showProgressByIcon
+ DataType: method
+ RandomSeed: 435
+ Value: |+1
+  -- show the progress by the icons "Icon0",...,"Icon8"
+  var ApplObj:object := ~
+  var GAOpt:object := ApplObj.GaOptimization
+  var GenSize:integer := GAOpt.GenerationSize
+  -- current state:
+  var GenNo:integer := ApplObj.currGeneration
+  var IndNo:integer := ApplObj.individualNum
+  
+  var n:integer
+  if GenNo = 1 
+  	n := IndNo
+  else
+  	n := GenSize + 2 * (GenNo - 2) * GenSize + IndNo
+  end
+  
+  var totalNum:integer := (2 * GAOpt.NumGenerations - 1) * GAOpt.GenerationSize
+  var iconNo:integer := ceil(8 * n/totalNum) -- round down of a number in [0,8)
+  -- iconNo = 1,...,7
+  -- 8 is shown ones after the last run
+  if 0 < iconNo AND iconNo < 9 
+  	ApplObj.selected := false
+  	var iconStr:string := to_str("icon",iconNo)
+  	ApplObj.CurrIcon := iconStr
+  	if ApplObj._3D.exists
+  		ApplObj._3D.VisibleGraphicGroups := makeArray(iconStr)
+  	end
+  end
+-
+ Name: wait4generationChange
+ DataType: boolean
+ Value: false
+$UserPopupMenu:
+ Active: true
+$RepresentationArea: [0,0,0,0]
+$ShowConnections: true
+$ShowComment: true
+$ShowGrid: true
+$Nodes:
+- 72144dae-6e70-4999-89b6-8faa5a59b95a
+- 77ee9d7f-7d18-493a-9ef5-15a831017f3a
+- 10ca2f01-5365-4eef-ad97-d501daf06119
+- ea93eb80-5845-45f7-b77a-c01ff0ffc92e
+- bd534b3d-4076-4162-a5ee-9b889f005868
+- 5d96f248-0cc3-49ec-8083-3ff5a8fdeaf3
+- 9e9112da-cc7e-4def-bbd7-65ffe6ab79b1
+- 658aea7b-106e-4bd0-b096-29434429feb4
+- 35eb67a6-e618-416b-8ba9-ae4f204f5c7d
+- 7a8318b5-d6e2-49d7-8bc2-8cea6beb4f64
+- 4f85c57d-3454-43dc-9e3d-90555bd2bf4f
+- 9be047cc-b22d-4ece-94ef-e97ee5ea1ea1
+- 50a9e20b-6502-4d9d-abb0-934a87079f12
+- 09af0d55-d736-4691-ab6c-e5b15889afb4
+- 7807e50d-740d-45ef-ac90-fedd1b9762c8
+- c9d2443d-369b-4f8b-b4a4-bcb23f36bd05
+- f380eaea-c4ad-4900-9641-db1234e5e46c
